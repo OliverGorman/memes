@@ -68,7 +68,7 @@ void showStarOfDavid(int isInFlag) {
     if (isInFlag) {
         while (i < DAVID_ROWS) {
             if (i > DAVID_ROWS / 2){
-                printf("%s%s\n", spacer, rows [DAVID_ROWS - 1 -i]);
+                printf("%s%s\n", spacer, rows[DAVID_ROWS - 1 -i]);
             } else {
                 printf("%s%s\n", spacer, rows[i]);
             }
@@ -77,7 +77,7 @@ void showStarOfDavid(int isInFlag) {
     } else {
         while (i < DAVID_ROWS) {
             if (i > (DAVID_ROWS / 2)){
-                printf("%s\n", rows [DAVID_ROWS - 1 -i]);
+                printf("%s\n", rows[DAVID_ROWS - 1 -i]);
             } else {
                 printf("%s\n", rows[i]);
             }
