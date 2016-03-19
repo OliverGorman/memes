@@ -27,8 +27,8 @@ int main(int argc, const char * argv[]) {
 // print the flag of israel
 
 void showIsrael(void) {
-    char flagUnit = '*';
-    char space = ' ';
+    char blue = '*';
+    char white = ' ';
     int h = 0;
     int i = 0;
     while (h < ISRAEL_HEIGHT) {
@@ -39,10 +39,10 @@ void showIsrael(void) {
         } else {
             while (i < ISRAEL_WIDTH) {
                 if ((h == 0) || (h == ISRAEL_HEIGHT - 1)){
-                    printf("%c", space);
+                    printf("%c", white);
                 } else if ((h < ISRAEL_SECTION) ||
                            (h >= ISRAEL_HEIGHT - ISRAEL_SECTION)) {
-                    printf("%c", flagUnit);
+                    printf("%c", blue);
                 }
                 i++;
             }
